@@ -1,0 +1,14 @@
+<ul class='subdomains-list'>
+  <% @subdomains.each do |subdomain| %>
+    <li>
+      <%= link_to subdomain.description, root_url(subdomain: subdomain.subdomain), class: 'subdomain' %>
+    </li>
+  <% end %>
+</ul>
+<ul>
+  <% @pages.each do |page| %>
+    <li>
+      <%= page.header %>
+    </li>
+  <% end %>
+</ul>
